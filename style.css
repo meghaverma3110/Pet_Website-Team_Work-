@@ -1,0 +1,855 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    margin-left: 96%;
+    margin-top: 700px;
+    height: 40px;
+    width: 60px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.box {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 200px;
+}
+/* nav */
+.box {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 200px;
+}
+/* nav start */
+.navbar {
+    height: 70px;
+    width: 100%;
+    padding: 14px 50px;
+    background-color: #daac00;
+    /* position: relative; */
+    /* position: fixed; */
+}
+
+.navbar .nav-header {
+    display: inline;
+
+}
+
+.navbar .nav-header .nav-logo {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.navbar .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.navbar .nav-links .loginBtn {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #00bec9;
+}
+
+.navbar .nav-links a {
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    color: white;
+}
+
+/* Hover effects */
+.navbar .nav-links a:hover {
+    background-color: #00bec9;
+}
+
+/* responsive navbar toggle button */
+.navbar #nav-check,
+.navbar .nav-btn {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .navbar .nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #eee;
+    }
+
+    .navbar .nav-btn label:hover,
+    .navbar #nav-check:checked~.nav-btn label {
+        background-color: #46ACC2;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        background-color: #46ACC2;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked~.nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .navbar .nav-links .loginBtn {
+        padding: 10px 40px;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #46ACC2;
+    }
+
+
+}
+
+
+   
+
+
+
+
+
+
+
+
+
+
+/* banner */
+.banner {
+    width: 100%;
+    background-color: #fcc302;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin-top: 70px; */
+}
+.first_heading{
+    text-align: center;
+    padding: 20px;
+    color: #00bec9;
+    font-size: 50px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex_display {
+    display: flex;
+}
+
+.banner_box1 {
+
+    /* text-align: right; */
+    /* background-color: aqua; */
+    /* align-items: flex-end; */
+    /* justify-content: end; */
+    padding-left: 100px;
+
+}
+
+.banner_heading {
+    margin-top: 35px;
+    padding: 50px;
+    font-size: 50px;
+    color: white;
+    text-align: left;
+}
+
+.banner_para {
+    /* margin-top: 5px; */
+    font-size: 20px;
+    padding: 0px 50px;
+    color: white;
+    text-align: left;
+}
+
+
+.button_mytype {
+    align-items: center;
+    margin: 45px;
+    /* display: flex; */
+    justify-content: flex-start;
+    /* text-align: center; */
+    /* background: #00bec9; */
+}
+
+.btn1 {
+    width: 150px;
+    height: 50px;
+    background: #00bec9;
+    border-radius: 15px;
+    border: none;
+
+
+
+}
+
+.btn1:hover {
+
+    background: white;
+    border-radius: 15px;
+    border: none;
+    color: #daac00;
+
+
+
+}
+
+.btn2 {
+
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+
+}
+
+.margin_left25 {
+    margin-left: 25px;
+}
+
+.btn2:hover {
+    background: #00bec9;
+
+}
+
+
+
+
+.banner_image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.treatment_box {
+    width: 100%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+
+}
+
+.custm {
+    color: #daac00;
+
+}
+
+/* .pet_care_details2 custm */
+.custm_btn {
+    background-color: #00bec9;
+    /* text-align: right; */
+
+
+}
+
+.custm_btn3 {
+    margin-left: 325px;
+    /* background-color: #00bec9; */
+
+}
+
+
+/* .pet_care_details2 end */
+
+
+/* .pet_care_details start*/
+.pet_care_img1 {
+    /* width: 100%; */
+    /* margin: auto; */
+    align-items: center;
+}
+
+.pet_care_details {
+    background-color: #fcc302;
+    width: 100%;
+
+}
+
+.petcare_heading {
+    text-align: center;
+    color: white;
+    /* margin-top: 100px; */
+    font-size: 40px;
+    padding: 30px;
+}
+
+.petcare_para {
+    text-align: center;
+    color: white;
+    /* margin-top: 20px; */
+    font-size: 20px;
+}
+
+.pet_care_image {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.image_center_position {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.button_center_position {
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #00bec9;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.petcare_para {
+    text-align: center;
+    /* margin-top: 50px; */
+    padding: 48px;
+}
+
+.petcare_para1 {
+    text-align: center;
+    /* margin-top: 50px; */
+    /* padding: 30px; */
+    font-size: 30px;
+}
+
+/* pet_care_details end */
+
+
+
+/* .treatment_box */
+.custm1 {
+    justify-content: flex-start;
+    margin-top: 50px;
+    color: #daac00;
+    text-align: right;
+
+}
+
+
+
+/* .pet_care_details2 start */
+.dollar {
+    color: white;
+    font-size: 30px;
+}
+
+/* pet_care_details2 end */
+
+.our_team {
+    background-color: white;
+}
+
+.team {
+    color: #daac00;
+}
+
+/* check_details start */
+.check_details {
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/checkimgh.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 20PX;
+}
+
+h4 {
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.doctor_dog {
+    height: 400px;
+    margin-left: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.doctor_dog2 {
+    height: 500px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.margin_right80 {
+    margin-right: 120px;
+}
+
+.iconhealth {
+    width: 80%;
+}
+
+.iconstethoscope {
+    width: 40%;
+}
+
+.margin_left150 {
+    margin-left: 150px;
+}
+
+/* footer about */
+/* .about_heading{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.fo_box1{
+    text-align: center;
+    color: #00bec9;
+    
+}
+
+ .sub_li{
+  
+    text-align: center;
+        list-style-type: none;
+        padding: 10px;
+        line-height: 30px;
+        color: #00bec9;
+
+}
+.sub_lia {
+    text-decoration: none;
+    color: #00bec9;
+
+} 
+.sub_li a:hover {
+   
+    color: white;
+
+} */
+/* footer start */
+.footer {
+    width: 100%;
+    background: #00121b;
+    display: block;
+}
+
+.inner-footer {
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer-items {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer-items p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+    color: #46ACC2;
+}
+
+.footer-items h1 {
+    color: #fff;
+}
+
+.border1 {
+    height: 3px;
+    width: 40px;
+    background: #ff9800;
+    color: #ff9800;
+    background-color: #ff9800;
+    border: 0px;
+}
+
+ul {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+ul a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #ff9800;
+}
+
+ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+li i {
+    margin-right: 20px;
+}
+
+.social-media {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i {
+    height: 25px;
+    width: 25px;
+    margin: 20px 10px;
+    padding: 4px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-media i:hover {
+    transform: scale(1.5);
+}
+
+.footer-bottom {
+    padding: 10px;
+    background: #00121b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer_para {
+    padding: 20px;
+
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+    .footer-items {
+        width: 50%;
+    }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+    .footer-items {
+        width: 100%;
+    }
+}
+
+/* footer end */
+
+
+
+
+@media only screen and (max-width: 420px) {
+    .banner {
+        flex-direction: column;
+        margin-top: 0;
+    }
+        .img_width {
+            align-items: center;
+        }
+    .navbar{
+        width: 100%;
+    }
+    #myBtn {
+        margin-left: 61%;
+        margin-top: 1135px;
+    }
+    .first_heading{
+        font-size: 30px;
+    }
+     .custmmiddle{
+         margin-left: 0;
+     }   
+
+    .treatment_box {
+        flex-direction: column;
+    }
+
+    .pet_care_image {
+        flex-direction: column;
+    }
+
+    .check_details {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .iconhealth {
+        width: 40%;
+    }
+
+    .iconstethoscope {
+        width: 20%;
+    }
+
+    .banner_box1 {
+        padding-left: 0px;
+    }
+
+    .banner_heading {
+        margin-top: 35px;
+        padding: 0px;
+        font-size: 30px;
+        text-align: center;
+    }
+        .margin_right80{
+            margin-right: 0;
+            text-align: center;
+        }
+
+    .logo_img {
+
+        margin-right: 0px;
+    }
+
+    .doctor_dog {
+        height: auto;
+        /* margin-left: 150px; */
+        /* margin-right: 150px; */
+        padding: 20px;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .doctor_dog2 {
+        height: 400px;
+        margin-left: auto;
+        /* padding: 20px;
+        margin-top: 0px;
+        width: 100%; */
+    }
+
+    .custm_btn3 {
+        margin-left: 45px;
+    }
+
+    .margin_right80 {
+        margin-right: 0px;
+    }
+
+    h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .petcare_heading {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 20PX;
+    }
+
+    .petcare_para1 {
+        font-size: 15px;
+    }
+
+    h4 {
+        margin-top: 10px;
+        color: white;
+        font-size: 40px;
+    }
+
+    .mobile_flex {
+        display: flex;
+    }
+
+    .button_mytype {
+        text-align: center;
+    }
+
+    .custm1 {
+
+        text-align: center;
+
+    }
+
+    .banner_para {
+
+        text-align: center;
+    }
+  
+
+   
+}
+ @media only screen and (max-width: 768px){
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .doctor_dog{
+        margin-left: 130px;
+    }
+   
+    .treatment_box{
+        flex-direction: column;
+    }
+    .petcare_para1{
+        font-size: 18px;
+    }
+    .navbar{
+        padding: 14px 30px;
+    }
+    .img_width{
+        align-items: center;
+    }
+    .banner_heading,.banner_para{
+        text-align: center;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .banner_box1{
+        padding: 0;
+    }
+    .button_mytype{
+        margin: 50px;
+        text-align: center;
+    }
+    .custm1, .custm2{
+       margin-left: 150px;    
+    }
+    .custmmiddle{
+        margin-left: 150px;
+    }
+    #mybtn{
+        margin-left:90%;
+        margin-top: 982px;
+        display: none;
+            position: fixed;
+            bottom: 20px;
+        
+           
+            height: 40px;
+            width: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+           
+           
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+    }
+    .check_details{
+        height: 450px;
+    }
+    
+} 
